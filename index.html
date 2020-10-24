@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
 	   <!-- Custom CSS -->
      <link href="css/styles.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -25,8 +24,11 @@
                     <h1>Total Confusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                   <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                  <a class="btn btn-warning btn-block" href="#reserveform">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -67,12 +69,17 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-first col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col col-sm order-sm-last col-md">
+              <div class="media">
+                <div class="media-body">
+                  <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                  <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p><p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="uthappizza">
+              </div>
             </div>
         </div>
 
@@ -91,6 +98,62 @@
               </div>
             </div>
         </div>
+
+        <div id="reserveform" class="row row-content align-items-center">
+          <div class="col-sm-2"></div>
+          <div class="col-12 col-sm-8">
+            <div class="card">
+              <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+              <div class="card-body">
+                <dl class="row">
+                  <dt class="col-12 col-sm-2">Number of Guests</dt>
+                  <dt class="col-12 col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                        <label class="form-check-label" for="inlineRadio4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                        <label class="form-check-label" for="inlineRadio5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                        <label class="form-check-label" for="inlineRadio6">6</label>
+                    </div>
+                  </dt>
+                </dl>
+                <dl class="row">
+                  <dt class="col-12 col-sm-2">Date and Time</dt>
+                  <dt class="col-12 col-sm-5">
+                    <input class="form-control" type="text" name="date" placeholder="Date">
+                  </dt>
+                  <dt class="col-12 col-sm-5">
+                    <input class="form-control" type="text" name="time" placeholder="Time">
+                  </dt>
+                </dl>
+                <dl class="row">
+                  <dt class="col-sm-2"></dt>
+                  <dt class="col-12 col-sm"><button class="btn btn-primary" type="submit" name="button">Reserve</button></dt>
+                </dl>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-sm-2"></div>
+
     </div>
 
     <footer class="footer">
