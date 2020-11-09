@@ -38,6 +38,13 @@
     min-height: 300px;
 }
 
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
 .address{
     font-size:80%;
     margin:0px;
